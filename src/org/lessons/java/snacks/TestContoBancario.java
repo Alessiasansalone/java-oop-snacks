@@ -20,70 +20,57 @@ public class TestContoBancario {
 		
 
 		if (userNum == numbers[0]) {
-			System.out.println("Ciao! Cosa vuoi fare?");
 			num1.getOptions();
 			
 			scan = new Scanner(System.in);
 			int userOpt = scan.nextInt();
 			
 			if (userOpt == 1) {
-				System.out.println("Digita l'importo da ricaricare, con due "
-						+ "cifre decimali");
 				num1.getRecharge();
 				
 			} else if (userOpt == 2) {
-				System.out.println("Digita l'importo da prelevare, con due "
-						+ "cifre decimali");
 				num1.getWithdrawal();
 				
 			} else if (userOpt == 3) {
-				System.out.println("SALDO ATTUALE: " + num1.balance);
+				num1.getBalance();
 			}
 		}
 		
 		if (userNum == numbers[1]) {
-			System.out.println("Ciao! Cosa vuoi fare?");
 			num1.getOptions();
 			
 			scan = new Scanner(System.in);
 			int userOpt = scan.nextInt();
 			
 			if (userOpt == 1) {
-				System.out.println("Digita l'importo da ricaricare, con due "
-						+ "cifre decimali");
-				num1.getRecharge();
+				num2.getRecharge();
 				
 			} else if (userOpt == 2) {
-				System.out.println("Digita l'importo da prelevare, con due "
-						+ "cifre decimali");
-				num1.getWithdrawal();
+				num2.getWithdrawal();
 				
 			} else if (userOpt == 3) {
-				System.out.println("SALDO ATTUALE: " + num1.balance);
+				num2.getBalance();
 			}
 		}
 		
 		if (userNum == numbers[2]) {
-			System.out.println("Ciao! Cosa vuoi fare?");
 			num1.getOptions();
 			
 			scan = new Scanner(System.in);
 			int userOpt = scan.nextInt();
 			
 			if (userOpt == 1) {
-				System.out.println("Digita l'importo da ricaricare, con due "
-						+ "cifre decimali");
-				num1.getRecharge();
+				num3.getRecharge();
 				
 			} else if (userOpt == 2) {
-				System.out.println("Digita l'importo da prelevare, con due "
-						+ "cifre decimali");
-				num1.getWithdrawal();
+				num3.getWithdrawal();
 				
 			} else if (userOpt == 3) {
-				System.out.println("SALDO ATTUALE: " + num1.balance);
+				num3.getBalance();
 			}
 		}
+		
+		
 	}
 
 }

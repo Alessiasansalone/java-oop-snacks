@@ -33,11 +33,14 @@ public class ContoBancario {
 	}
 	
 	public double getRecharge() {
+		System.out.println("Digita l'importo da ricaricare, con due "
+				+ "cifre decimali");
 		return setRecharge();
 		
 	}
 	
 	public void getOptions() {
+		System.out.println("Ciao! Cosa vuoi fare?");
 		System.out.println("Digita 1 se vuoi depositare");
 		System.out.println("Digita 2 se vuoi prelevare");
 		System.out.println("Digita 3 se vuoi sapere il tuo saldo attuale");
@@ -53,7 +56,17 @@ public class ContoBancario {
 	}
 	
 	public double getWithdrawal() {
+		System.out.println("Digita l'importo da prelevare, con due "
+				+ "cifre decimali");
 		return setWithdrawal();
 	}
 	
+	private double setBalance() {
+		System.out.println("SALDO ATTUALE: €" + balance);
+		return balance;
+	}
+	
+	public double getBalance() {
+		return setBalance();
+	}
 }
