@@ -11,6 +11,7 @@ public class TestStudente {
 	System.out.println(stud1.getCompleteName());
 	System.out.println(stud2.getCompleteName());
 	System.out.println(stud3.getCompleteName());
+	
 	}
 
 }
